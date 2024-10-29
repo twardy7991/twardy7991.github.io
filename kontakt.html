@@ -37,24 +37,27 @@
       <fieldset>
         <label for="email">
           Wprowadź swój adres email
-          <input id="email" name="email" type="email" placeholder="twojemail@email.com">
+          <input id="email" name="email" type="email" placeholder="twojemail@email.com" >
         </label>
         <label for="topic">
           Wybierz temat maila
           <select id="topic" name="topic" required>
+            <option value="1">-- Wybierz Opcję --</option>
             <option value="1">Chciałbym dowiedzieć się więcej</option>
             <option value="2">Chciałbym pisać na stronie</option>
             <option value="3">Mam zastrzeżenia co do treści</option>
           </select>
         </label>
         <label for="message"
-          >Treść wiadomości: 
+          >Treść wiadomości (wymagane minimum 10 słów, limit 1000 słów): 
           <textarea
             id="message"
             name="message"
             rows="10"
             cols="30"
             placeholder="Cześć, piszę do was z pytaniem...."
+            minlength="10"
+            maxlength="1000"
           required></textarea>
       </fieldset>
       <div class="submit">
