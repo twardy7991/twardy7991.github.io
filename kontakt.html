@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="kontakt_style.css
+    "
+    />
+    <title>Formula 1</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Sezon 2021 - inny niż wszystkie.</h1>
+      <h3>"Best season I have ever comentated on" - David Crofty</h3>
+      <nav class="navigation">
+        <a class="page_button page_button1" href="main.html" target="_blank"
+          >Strona Główna</a
+        >
+        <a
+          class="page_button page_button_np"
+          href="kontakt.html"
+          target="_blank"
+          >Kontakt</a
+        >
+        <a class="page_button page_button2" href="galeria.html" target="_blank"
+          >Galeria</a
+        >
+      </nav>
+    </header>
+    <p>Zapraszamy do kontaktu!</p>
+    <form method="post">
+      <fieldset>
+        <label for="email">
+          Wprowadź swój adres email
+          <input id="email" name="email" type="email" placeholder="twojemail@email.com">
+        </label>
+        <label for="topic">
+          Wybierz temat maila
+          <select id="topic" name="topic" required>
+            <option value="1">Chciałbym dowiedzieć się więcej</option>
+            <option value="2">Chciałbym pisać na stronie</option>
+            <option value="3">Mam zastrzeżenia co do treści</option>
+          </select>
+        </label>
+        <label for="message"
+          >Treść wiadomości: 
+          <textarea
+            id="message"
+            name="message"
+            rows="10"
+            cols="30"
+            placeholder="Cześć, piszę do was z pytaniem...."
+          required></textarea>
+      </fieldset>
+      <div class="submit">
+      <input type="submit" value="Wyślij" />
+    </div>
+    </form>
+    <footer>Patryk Twardowski</footer>
+  </body>
+</html>
